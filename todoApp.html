@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+    <meta charset="utf-8">
+    <title>Todo App | JavaScript</title>
+    <link rel="stylesheet" href="todo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head> 
+<body>
+    <div class="heading">
+      <h1>To-Do App Using Javascript</h1>  
+    </div>
+    <div class="wrapper">
+        <div class="task-input">
+            <i class="fa fa-server" aria-hidden="true"></i>
+            <input type="text" placeholder="New task" id="txtItem">
+            <i class="fa fa-floppy-o" onclick="saveTask()" aria-hidden="true"></i>
+        </div>
+        <div class="controls">
+            <div class="filters">
+                <span class="active" id="all">All</span>
+                <span id="pending">To-Do</span>
+                <span id="pending">In-Progess</span>
+                <span id="completed">Closed</span>
+            </div>
+            <button class="clear-btn active" onclick="removeAll()" >Clear All</button>
+        </div>
+        <ul class="task-box" id="myTaskList">
+            <!-- <li class="task">
+                <label> 
+                    <p>name</p>
+                </label>
+                <div class="settings"> 
+                    <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                </div>
+            </li>
+            <li class="task">
+                <label> 
+                    <p>name</p>
+                </label>
+                <div class="settings"> 
+                    <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                </div>
+            </li> -->
+        </ul>
+    </div> 
+    <script src="todo.js"></script> 
+</body> 
+</html>

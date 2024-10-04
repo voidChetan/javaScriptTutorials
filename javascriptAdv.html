@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // //resolve -- success function
+        // //reject -- error
+
+
+        // // URL of the API endpoint
+        // const apiUrl = 'https://jsonplaceholder.typicode.com/users';
+
+        // // Using fetch to make the API call
+        // fetch(apiUrl)
+        //     .then(response => {
+        //         debugger;
+        //         if (!response.ok) {
+        //             throw new Error('Network response was not ok');
+        //         }
+        //         return response.json(); // Parse response body as JSON
+        //     })
+        //     .then(data => {
+        //         debugger;
+        //         console.log('API Response:', data);
+        //     })
+        //     .catch(error => {
+        //         debugger;
+        //         console.error('Error:', error);
+        //     });
+
+
+        // let compare = new Promise((resolve, reject) => {
+        //     let a = 1 + 3;
+        //     if (a == 4) {
+        //         resolve('Success');
+        //     } else {
+        //         reject('Error')
+        //     }
+        // });
+
+        // compare.then(res => {
+        //     console.log("success => " + res)
+        // }).catch((error) => {
+        //     console.log('In error ' + error);
+        // })
+
+
+
+    </script>
+
+    <script>
+
+                (function () {
+                        var foo = 3;
+                        console.log(foo);
+                    })();
+
+        function add2No(num1, num2,fun) {
+            var result =  num1+ num2;
+            fun(result);
+        }
+        function add3No(num1, num2, num3, fun) {
+            var result =  num1+ num2 + num3;
+            fun(result);
+        }
+
+        function showOutput(result) {
+            alert(result);
+        }
+
+        function print(fun) {
+            fun();
+        }
+
+        print(function(){alert("Hii")})
+
+        add2No(2,6, showOutput);
+        add3No(4,5,8, showOutput);
+    </script>
+</body>
+
+</html>
